@@ -1,0 +1,92 @@
+site_name: prompt2sign
+site_author: 'SignLLM'
+copyright: '&copy; 2023-2024 SignLLM'
+theme:
+  name: material
+  custom_dir: overrides
+  palette:
+  - scheme: default
+    primary: blue
+    accent: amber
+  features:
+    - content.action.edit
+    - content.code.copy
+    - navigation.tabs
+    - navigation.top
+    - navigation.footer
+    - navigation.instant
+    - toc.follow
+    - search.highlight
+    - announce.dismiss
+  favicon: images/logo.png
+  icon:
+    logo: material/school
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - meta
+  - attr_list
+  - md_in_html
+  - admonition
+  - tables
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+plugins:
+  - search
+  - social
+  - glightbox:
+      loop: true
+      zoomable: true
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: timeago
+
+nav:
+  - prompt2sign:
+    - 迅速开始: begin.md
+    - 处理后的数据集: datasets.md
+    - 工具使用: tools.md
+    - 背景知识: background.md
+    - 常见问题: question.md
+    - 联系我们: contact.md
+$programs_list
+    - # 占位符
+
+  - 项目信息表: program_info.md
+
+extra:
+  homepage: /grade/
+  social:
+    - icon: fontawesome/brands/qq
+      link: # 占位符
+    - icon: fontawesome/brands/discord
+      link: # 占位符
+  analytics:
+    provider: google
+    property: G-MWWFQ6MJG4
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+    actions:
+      - accept
+      - manage 
+repo_url: https://github.com/SignLLM/SignLLM.github.io
+repo_name: prompt2sign
+edit_uri: edit/master/docs/
+extra_css:
+  - stylesheets/extra.css
